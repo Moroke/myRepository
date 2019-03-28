@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+server：
+  port：8001
+spring：
+  application:
+    name:MICRO-SERVER-DEV
+  profiles:dev
+
+---
+server:
+  port:8002
+spring：
+  application:
+    name:MICRO-SERVER-DEV
+  profiles:test
+
+  
