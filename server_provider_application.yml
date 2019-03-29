@@ -19,7 +19,7 @@ server:
   port: 8002
 spring:
   application:
-    name: MICRO-SERVER-DEV
+    name: MICRO-SERVER-DEV-TEST
   profiles: test
 eureka:
    client:
