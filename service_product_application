@@ -1,1 +1,27 @@
-# myRepository
+spring:
+  profiles:
+    active:
+      - dev
+---
+server:
+  port: 8003
+spring:
+  application:
+    name: AIGOU-SERVER-DEV
+  profiles: dev
+eureka:
+   client:
+     service-url:
+       defaultZone: http://localhost:7001/eureka
+
+---
+server:
+  port: 8004
+spring:
+  application:
+    name: AIGOU-SERVER-DEV-TEST
+  profiles: test
+eureka:
+   client:
+     service-url:
+       defaultZone: http://localhost:7001/eureka
